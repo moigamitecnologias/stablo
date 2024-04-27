@@ -13,35 +13,43 @@ import { myLoader } from "@/utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Home",
+      label: "Início",
       href: "/"
     },
     {
-      label: "About",
+      label: "Sobre",
       href: "/about"
     },
     {
-      label: "Contact",
+      label: "Contato",
       href: "/contact"
     }
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
+      label: "Artigos",
       href: "/archive"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
+      label: "Buscar",
+      href: "/search"
     },
     {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
-      external: true
-    }
+      label: "Site",
+      href: "#"
+    },
+    // {
+    //   label: "Pro Version",
+    //   href: "https://stablo-pro.web3templates.com/",
+    //   external: true,
+    //   badge: "new"
+    // },
+    // {
+    //   label: "Download",
+    //   href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+    //   external: true
+    // }
   ];
 
   const mobilemenu = [...leftmenu, ...rightmenu];
@@ -75,8 +83,8 @@ export default function Navbar(props) {
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
+                <div className="flex w-full items-center justify-center md:w-auto">
+                  <Link href="/" className="w-28 dark:hidden items-center justify-center grid">
                     {props.logo ? (
                       <Image
                         {...urlForImage(props.logo)}
@@ -90,7 +98,7 @@ export default function Navbar(props) {
                       </span>
                     )}
                   </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
+                  <Link href="/" className="hidden w-28 dark:grid items-center justify-center">
                     {props.logoalt ? (
                       <Image
                         {...urlForImage(props.logoalt)}
