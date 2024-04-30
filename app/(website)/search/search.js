@@ -33,7 +33,7 @@ export default function Search(props) {
       <div>
         <div className="flex items-center justify-center mt-14 ">
           <h1 className="text-xl font-semibold tracking-tight lg:leading-tight text-brand-primary lg:text-3xl dark:text-white">
-            {query ? `Search results for "${query}"` : "Search"}
+            {query ? `Buscando resultados de "${query}"` : "Buscar"}
           </h1>
         </div>
 
@@ -41,7 +41,7 @@ export default function Search(props) {
           <SearchInput
             q={query}
             handleChange={handleChange}
-            placeholder="Enter keywords"
+            placeholder="Insira uma palavra-chave"
           />
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function Search(props) {
         {query && data?.length === 0 && (
           <div className="flex items-center justify-center h-40">
             <span className="text-lg text-gray-500">
-              No posts found for {query}. Try again!
+              Nada encontrado para {query}. Tente novamente, por gentileza!
             </span>
           </div>
         )}

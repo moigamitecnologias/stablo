@@ -13,7 +13,7 @@ async function getAuthor(slug) {
 
 export async function generateMetadata({ params }) {
   const author = await getAuthor(params.author);
-  return { title: author.title };
+  return { title: author.name };
 }
 
 export default async function AuthorPage({ params }) {

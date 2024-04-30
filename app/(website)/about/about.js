@@ -7,10 +7,10 @@ export default function About({ authors, settings }) {
   return (
     <Container>
       <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-        About
+        Sobre
       </h1>
       <div className="text-center">
-        <p className="text-lg">We are a small passionate team.</p>
+        <p className="text-lg">Somos um time pequeno e apaixonado.</p>
       </div>
 
       <div className="mb-16 mt-6 grid grid-cols-3 gap-5 md:mb-32 md:mt-16 md:gap-16">
@@ -38,18 +38,18 @@ export default function About({ authors, settings }) {
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
+          Nós fornecemos serviços e integrações elegantes para possibilitar que
+          provedores de software e instituições financeiras criem produtos
+          integrados para seus clientes de pequenas empresas.
         </p>
         <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
+          Nossa infraestrutura de API é utilizada por clientes que variam de
+          financiadores a fornecedores de cartões corporativos e ferramentas de
+          previsão empresarial, com casos de uso incluindo reconciliação automática,
+          painéis de controle empresariais e tomada de decisões de empréstimo.
         </p>
         <p>
-          <Link href="/contact">Get in touch</Link>
+          <Link href="/contact">Entre em contato</Link>
         </p>
       </div>
     </Container>
